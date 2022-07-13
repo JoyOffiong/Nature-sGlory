@@ -92,15 +92,16 @@ section{
    padding-top: 5rem;
 
 }
-.about{
+.about  {
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   
 }
-.image{
+.about .image{
   width: 50%;
+  border: 1px solid var(--primary-color);
 }
 .about-text{
   width: 45%; 
@@ -124,31 +125,28 @@ section{
 
 /* swiper */
 .swiper{
-  width: 90%;
-  height: 80vh;
   text-align: center;
   margin: 0  auto;
 }
-.swiper-slide{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-text-align: center;
-border-radius: 5px;
-transition: 5s ease-in-out;
+.swiper-wrapper{
+  margin: auto;
 }
+
 .swiper-pagination{
-  margin-top: 2%;
+  margin-top: 100px;
 }
 .item{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  margin: 20px;
   box-shadow: 0px 1px 1px rgba(27, 9, 9, 0.2), -0px -1px 1px rgba(27, 9, 9, 0.2);
   border-radius: 10px;
 
+}
+.swiper-button-next:after{
+  font-size: none;
 }
 
 .item .image{
@@ -162,7 +160,7 @@ transition: 5s ease-in-out;
 }
 
 .item-text{
-  /* padding: 20px; */
+  padding: 20px;
   /* box-shadow: 0px 1px 1px rgba(27, 9, 9, 0.2), -0px -1px 1px rgba(27, 9, 9, 0.2); */
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -217,9 +215,67 @@ border-top-left-radius: 10px;
 
 .services-text{
   font-size: 20px;
+  text-align: center;
 }
 
+/* meet the team styling */
+/*{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+   url(/images/FB_IMG_1657455712673.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
 
+} */
+.team-members{
+  padding-bottom: 0;
+}
+.team-wrap{
+  width:90%;
+  margin: auto;
+  /* text-align: ce nter; */
+}
+.team-wrap h2{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.team-wrap p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.ceo{
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.crew{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.team{
+  width: 31%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-wrap .image{
+  height: 200px;
+  width: 200px;
+  margin: auto;
+ 
+}
+.team-wrap .image img{
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+footer{
+  background-color: var(--primary-color);
+  height: 70vh;
+}
 
 @media (max-width: 1200px) {
     .name{
@@ -330,10 +386,20 @@ border-top-left-radius: 10px;
   .title h2{
     font-size: 18px;
   }
-.certifications{
+.certifications, .services-wrap{
   flex-direction: column;
 }
-.certificate{
+.certificate, .service{
+  width: 100%;
+}
+
+.crew{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.team{
   width: 100%;
 }
 
