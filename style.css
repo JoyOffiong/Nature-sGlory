@@ -136,6 +136,7 @@ section{
 }
 .swiper-wrapper{
   margin: auto;
+  width: 80%;
 }
 
 .swiper-pagination{
@@ -146,14 +147,15 @@ section{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  /* margin: 20px; */
   box-shadow: 0px 1px 1px rgba(100, 238, 2, 0.2), -0px -1px 1px rgba(158, 237, 12, 0.2);
   border-radius: 10px;
 
 }
-.swiper-button-next:after{
-  font-size: none;
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: small;
 }
+
 
 .item .image{
   width: 100%;
@@ -166,10 +168,14 @@ section{
 }
 
 .item-text{
+  /* width: 80%; */
   padding: 20px;
   /* box-shadow: 0px 1px 1px rgba(27, 9, 9, 0.2), -0px -1px 1px rgba(27, 9, 9, 0.2); */
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+.item-text h4{
+    padding-bottom: 10px;
 }
 
 .oil .image{
@@ -192,20 +198,12 @@ border-top-left-radius: 10px;
 .chebepowder .image{
   background-color:rgb(213, 212, 212);
 }
-.price-list{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 /*CERTIFICATES AND SERVICES */
 .title{
-  width:60%;
-  margin: auto;
-  display: flex;
+  text-align: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--primary-color);
-  /* text-align: center  ; */
+ 
 }
 
 .certifications, .services-wrap{
@@ -223,6 +221,8 @@ border-top-left-radius: 10px;
   font-size: 20px;
   text-align: center;
 }
+
+
 
 /* meet the team styling */
 .team-members{
@@ -469,7 +469,7 @@ footer .name span{
         transform: translateX(-100%);
         overflow-x: hidden;
         background-color: var(--light-color);
-        z-index: 1;
+        z-index: 9;
     
       }
        .contact{
@@ -531,6 +531,11 @@ footer .name span{
   .title h2{
     font-size: 18px;
   }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    display: none;
+  }
+
 .certifications, .services-wrap{
   flex-direction: column;
 }

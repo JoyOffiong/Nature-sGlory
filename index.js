@@ -19,3 +19,22 @@ menuButton.addEventListener('click', () => {
 
             
     })
+
+const certificate= document.querySelector(".certificate-button");
+const service= document.querySelector(".service-button")
+const servicesWrap=document.querySelector("serviceswrap")
+const certificatesWrap=document.querySelector('certifications')
+
+
+service.addEventListener('click', () =>{
+    
+        certificatesWrap.style.display = 'none' 
+        servicesWrap.style.display='block'
+})
+
+certificate.addEventListener('click',() =>{
+
+        certificatesWrap.style.display = 'block'
+                servicesWrap.style.display='none'
+
+})
