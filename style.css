@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Arvo&family=Dancing+Script&family=Edu+SA+Beginner:wght@400;500&family=Poppins:wght@300&family=Splash&family=Yellowtail&display=swap');
+
 :root{
   --primary-color: rgb(6, 123, 6);
   --secondary-color: rgb(238, 182, 96);
@@ -14,11 +16,12 @@ html{
 }
 body{
   background-color: var(--light-color);
-  font-family: 'Edu SA Beginner', cursive;
+  font-family: 'Arima', cursive;
 }
 a{
     color: var(--primary-color);
     text-decoration: none;
+    font-weight: bold;
 }
 i{
   color: var(--primary-color);
@@ -373,6 +376,7 @@ footer .name span{
   padding-bottom: 20px;
 }
 .media-wrap{
+  width:16%;
   display: flex;
   justify-content: space-between;
 }
@@ -548,8 +552,8 @@ footer .name span{
 .testimony{
   width:100%;
 }
-.outlet{
+/* .outlet{
   width:100%;  
-}
+} */
 
 }
