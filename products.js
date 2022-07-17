@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper', {
     // when window width is <= 480px     
     1000: {       
        slidesPerView: 4,       
-       spaceBetween: 1     
+       spaceBetween: 20     
     },
   },
   // If we need pagination
