@@ -96,7 +96,7 @@ header{
   background-color: var(--primary-color);
 }
 .left{
-  background-color: var(--secondary-color);
+  background-color: var(--light-color);
   width: 50%;
 }
 .left-content{
@@ -509,7 +509,7 @@ footer{
     
       }
       .contact{
-        background-color: var(--ary-color);
+        background-color: var(--primary-color);
         padding: 10px;
         color: var(--secondary-color);
         border-radius: 5px;
