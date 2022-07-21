@@ -38,3 +38,4 @@ certificate.addEventListener('click',() =>{
                 servicesWrap.style.display='none'
 
 })
+

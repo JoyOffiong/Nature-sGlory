@@ -14,12 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script&family=Poppins:wght@300&family=Splash&family=Yellowtail&display=swap" rel="stylesheet">
      
     <link rel="stylesheet" href="/style.css">
-    <title>Nature's Glory</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<title>Nature's Glory</title>
 </head>
 <body>
     <div class="main">
           <!-- header -->
-          <header  >
+          <header class="header">
             <div class="name">
              <div class="name-image">
                 <img src="/images/anniversary.png" alt="">
@@ -29,16 +31,16 @@
             <nav class="nav-links">
              <ul>
                  <li><a class="active" href="#home">HOME</a></li>
-                 <li><a href="#about">ABOUT</a></li>
-                 <li><a href="#product">PRODUCTS</a></li>
-                 <li><a href="#services">SERVICES</a></li>
+                 <li><a class="active" href="#about">ABOUT</a></li>
+                 <li><a class="active" href="#product">PRODUCTS</a></li>
+                 <li><a class="active" href="#services">SERVICES</a></li>
             </ul>    
          </nav>
  
  
          <div class="buttons">
-             <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
-             <button class="nav-toggle2">
+             <button class="nav-toggle"><i class="fa-solid fa-bars  icons"></i></button>
+             <button class="nav-toggle2 icons">
                <i class="fa-solid fa-xmark"></i>
              </button>
            </div>
@@ -477,7 +479,7 @@
                             <img src="/images/students Industrial training.jpg" alt="">
                         </div>
                         <div class="services-text">
-                            <p> We are certified to train undergrates for 6months during their industrial trianing in 300level</p>
+                            <p>6months industrial trianing of undergraduates in 300level</p>
                         </div> 
                     </div>
                    </div>
@@ -573,9 +575,10 @@
         <!-- testimonials -->
         <div class="testimonials" id="testimonials">
             <h2>TESTIMONIALS</h2>
-            <div class="testimonies-wrap">
-                
-                <div class="testimony">
+            <div class=" swiper testimonies-wrap">
+                <div class="swiper-wrapper">
+                    
+                <div class=" swiper-slide testimony">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                          Esse minima commodi laudantium exercitationem voluptatum 
                         similique explicabo atque adipisci consequatur! Magni.
@@ -589,7 +592,7 @@
                         <i class="fa fa-star" aria-hidden="true"></i>
                       </div>
                 </div>
-                <div class="testimony">
+                <div class=" swiper-slide testimony">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                          Esse minima commodi laudantium exercitationem voluptatum 
                         similique explicabo atque adipisci consequatur! Magni.
@@ -603,7 +606,7 @@
                         <i class="fa fa-star" aria-hidden="true"></i>
                       </div>
                 </div>
-                <div class="testimony">
+                <div class=" swiper-slide testimony">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                          Esse minima commodi laudantium exercitationem voluptatum 
                         similique explicabo atque adipisci consequatur! Magni.
@@ -617,7 +620,15 @@
                         <i class="fa fa-star" aria-hidden="true"></i>
                       </div>
                 </div>
-                
+                </div>
+             
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>   
+
             </div>
         </div>
 
@@ -696,6 +707,7 @@
     </div>
 </body>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
+<script src="/header.js"></script>
 <script src="/index.js"></script>
 <script src="/products.js"></script>
 

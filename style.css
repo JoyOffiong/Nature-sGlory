@@ -39,13 +39,23 @@ header{
   width: 100%;
   top:0;
   z-index: 20;
+  background-color: transparent;
   
 }
+.scroll{
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  transition: all 0.3s;
+
+}
+.active{
+  color: var(--primary-color);
+}
+
 
 .name{
   width: 50%;
   text-align: left;
-  color: var(--primary-color);
   font-size: 25px;
  
 }
@@ -334,6 +344,9 @@ background-color: rgb(195, 192, 192);
   margin-bottom: 3rem;
 
 }
+#testimonials .swiper-wrapper{
+  height: 320px;
+}
 
 .testimonials h2{
   margin-bottom: 30px;
@@ -451,11 +464,16 @@ border-bottom: 1px var(--light-color) solid;
 
 
 @media (max-width: 1200px) {
+  header{
+    background-color: transparent;
+    height: 10vh;
+    padding: 2px 0;
+  }
   .hero-section{
     flex-direction: column;
     background-color: var(--light-color);
-    height: 70vh;
-    
+    height: 50vh;
+    margin-top:30px
   }
   .left{
     width: 100%;
@@ -521,9 +539,6 @@ border-bottom: 1px var(--light-color) solid;
         aspect-ratio: 0.9;
         transition: 0.3s ease;
       }
-      .nav-toggle, .nav-toggle2 i {
-        color:white;
-      }
       .nav-toggle,
       .nav-toggle2 i {
         font-size: 23px;
@@ -538,7 +553,9 @@ border-bottom: 1px var(--light-color) solid;
         aspect-ratio: 0.9;
         width: 2rem;
       }
-    
+    .icons{
+      color: var(--secondary-color);
+    }
       nav {
         margin-left: 0;
       }
@@ -586,14 +603,14 @@ border-bottom: 1px var(--light-color) solid;
 
 
 @media (max-width:768px){
+  .hero-section{
+    margin-top: 20px;
+    height: 70vh;
+  }
   .name-image{
     width: 100%;
     margin-left: 0;
   }  
-  header{
-    background-color: var(--light-color);
-  }
-
   .left{
     width: 100%;
     margin-top: 2%;
